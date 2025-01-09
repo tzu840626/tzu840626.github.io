@@ -1,0 +1,608 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body {
+    background-color: rgb(0, 0, 255);
+
+}
+
+
+
+
+/* nav bar */
+
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 100000;
+    margin: auto;
+    text-align: left;
+    background-color: rgb(8, 8, 8);
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    
+
+
+}
+
+nav a {
+    padding: 20px;
+    color: rgba(255, 255, 255, 2);
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    text-align: right;
+}
+
+nav i{
+    align-items: center;
+   justify-items: center;
+}
+
+
+nav a:hover {
+    color: rgb(255, 255, 255)
+}
+
+
+
+
+/*section*/
+
+section {
+    /*banner*/
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /*overflow: hidden; 超出的範圍隱藏*/
+    background-color: rgb(142, 142, 142);
+    margin-top: 50px;
+    
+
+
+}
+
+.left {
+    margin-left: 0px;
+    margin-right: 20px;
+    display: inline;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 20;
+    margin: 20px;
+
+   
+
+    
+
+}
+
+.left h1 {
+   
+    line-height: 1em;
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+
+}
+
+
+.left p {
+    /*小標*/
+    width: 100%;
+    color: rgb(30, 0, 255);
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.5px
+}
+
+.right {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+/*article*/
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+.card {
+    float: left;
+    box-sizing: border-box;
+    width: 22.22%;
+    text-align: center;
+    /*border: solid 5px rgb(145, 178, 152);*/
+    padding: 10px;
+    /*background: rgba(110, 137, 116);*/
+    color: rgb(255, 255, 255);
+
+
+    transition: background 1s;
+    -webkit-transition: background 1s;
+
+}
+
+
+.card:hover {
+    /*變化後的效果，只有mouse in 的效果 沒有 mouse out的效果*/
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+/*aside*/
+aside {
+    clear: both;
+    /*清除其他的float，就不會被影響*/
+    width: 80%;
+    margin: auto;
+}
+
+
+footer {
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+::-moz-selection {
+    /*aside :: 有指定前面要加選擇器*/
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+::selection {
+    /*aside :: 有指定前面要加選擇器*/
+    color: rgb(0, 0, 0);
+    background: rgb(234, 255, 0);
+}
+
+
+/*//////////////////////////// RWD detil //////////////////////////// */
+
+/* For phone */
+@media only screen and (min-width: 368px) {
+
+    /*menu*/
+    nav {
+        display: block;
+        position: sticky;
+        z-index: 1000000;
+        text-align: center;
+        
+    }
+
+    nav a{
+        font-size: 40px;
+        display: block;
+        margin: auto;
+        border-bottom: 1px solid white;
+       
+    }
+
+    nav a li {
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+       
+        background: green;
+
+    }
+
+    nav a {
+
+        text-align: center;
+    }
+
+
+
+    /* 跑馬燈效果 */
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        color: rgb(0, 0, 255);
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        background: rgb(243, 255, 25);
+        height: 40px;
+
+    }
+
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+
+    }
+
+    .marquee-content2 {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee2 20s linear infinite;
+    }
+
+    .marquee-content3 {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee2 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee3 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+
+
+
+    /*banner*/
+
+    section {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    .left {
+        height: auto;
+        top: 60px;
+        padding: 0px;
+
+    }
+
+    .left h1 {
+        font-size: 40px;
+        width: 300px;
+        color: rgb(255, 255, 255);
+    }
+
+    .left p {
+        font-size: 15px;
+        width: 300px;
+        color: rgb(221, 221, 221);
+    }
+
+    .right {
+        position: absolute;
+        box-sizing: border-box;
+        width: 200%;
+    }
+
+    canvas {
+        display: block;
+        position: absolute;
+        background: rgb(0, 0, 255);
+    }
+
+
+    /*concent*/
+
+    article {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 80px;
+        font-size: 15pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+
+
+    }
+
+    .card {
+        float: left;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        /*border: solid 5px rgb(145, 178, 152);*/
+        padding: 10px;
+        background: rgb(0, 0, 0);
+
+    }
+
+
+
+    .card h3 {
+        opacity: 1;
+        color: rgb(251, 255, 0);
+        padding-top: 20px;
+
+    }
+
+
+
+
+    /* For tablets */
+    @media only screen and (min-width: 768px) {
+
+
+        nav {
+            display: block;
+        }
+
+        .left h1 {
+            width: auto;
+            font-size: 40px;
+        }
+
+        article {
+            margin: auto;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+
+        }
+
+
+        /* For desktop */
+        @media only screen and (min-width: 1200px) {
+
+            /*menu*/
+            nav {
+                position: fixed;
+                width: 100%;
+                margin: auto;
+                text-align: left;
+                font-size: 18px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                font-size: 30px;
+                justify-content: left;
+
+            }
+
+            nav a {
+                display: inline;
+                padding: fixed;
+                border-bottom: 0px ;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            nav li a {
+                font-size: 20px;
+                text-align: center;
+
+            }
+
+
+
+            /* 跑馬燈效果 */
+            .marquee-container {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                color: rgb(0, 0, 255);
+                font-size: 30px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                background: rgb(243, 255, 25);
+                height: 50px;
+
+            }
+
+            .marquee-content {
+                display: inline-block;
+                white-space: nowrap;
+                animation: marquee 20s linear infinite;
+
+            }
+
+            .marquee-content2 {
+                display: inline-block;
+                white-space: nowrap;
+                animation: marquee2 20s linear infinite;
+            }
+
+            .marquee-content3 {
+                display: inline-block;
+                white-space: nowrap;
+                animation: marquee2 20s linear infinite;
+            }
+
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes marquee2 {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes marquee3 {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+
+
+
+            /*banner*/
+
+            section {
+                position: relative;
+                
+                height: 300px;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+
+            }
+
+            .left {
+                height: auto;
+                top: 80px;
+                padding: 0px;
+
+
+            }
+
+            .left h1 {
+                font-size: 60px;
+                color: rgb(255, 255, 255);
+
+            }
+
+            .left p {
+                font-size: 15px;
+                width: 100%;
+
+            }
+
+            .right {
+                position: absolute;
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            canvas {
+                display: block;
+                position: absolute;
+                background: rgb(0, 0, 255);
+            }
+
+
+
+            /* content*/
+
+            article {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+            
+            }
+
+            .card {
+                position: relative;
+                /* 设置为相对定位 */
+                box-sizing: border-box;
+                width: 22.22%;
+                text-align: center;
+                border: solid 5px;
+                background: rgb(0, 0, 0);
+                transition: background 1s, color 3s;
+                -webkit-transition: background 1s, color 3s;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+            }
+
+
+            .card h3 {
+                opacity: 1;
+                color: rgb(255, 247, 0);
+                padding-top: 10px;
+
+            }
+
+            .card h3:hover {
+                opacity: 1;
+                color: rgb(0, 0, 0);
+                padding-top: 10px;
+
+            }
+
+
+
+            /* footer*/
+
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+
+            /*for safari 2.1 to 6.0*/
+        }
+    }
+}

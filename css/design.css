@@ -1,0 +1,604 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("rwd.css");
+/*rwd的內容跟css分開*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body {
+    background-color: rgb(51, 0, 255);
+
+}
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 100000;
+    margin: auto;
+    background-color: rgb(8, 8, 8);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+
+}
+
+nav a {
+
+    color: rgba(255, 255, 255, 2);
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    text-align: right;
+}
+
+nav i{
+    align-items: center;
+   justify-items: center;
+}
+
+
+nav a:hover {
+    color: rgb(255, 255, 255)
+}
+
+/* aside */
+
+
+aside h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffff00;
+}
+
+
+
+header a {
+    text-align: center;
+    /*老師說 不要用margin: auto!!!!*/
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    background: #ffff00;
+    color: #000000;
+    padding: 5px 20px;
+
+}
+
+
+/* section */
+section {
+
+    display: flex;
+    /*完全沒有要調整位置 就可以不用加*/
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    align-items: stretch;
+}
+
+
+.box {
+    display: inline-block;
+    /*這樣這個是不是可以刪掉??*/
+    width: 100%;
+    margin: 0px auto;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.imgbox {
+    order: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box .imgbox img {
+    float: left;
+    width: 100%;
+
+}
+
+.box h3 {
+    font-size: 40px;
+    order: 2;
+    box-sizing: border-box;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.box p {
+    order: 3;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(242, 255, 0);
+}
+
+.head {
+    order: 4;
+    display: inline-block;
+    padding: 0px 20px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.head img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.head span {
+    float: left;
+    font-size: 13px;
+    color: rgb(184, 184, 184);
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/*canvas*/
+canvas {
+    position: absolute;
+    background: rgb(217, 217, 217);
+
+
+}
+
+
+
+
+/*article*/
+article {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+.card {
+    float: left;
+    box-sizing: border-box;
+    width: auto;
+    text-align: center;
+    /*border: solid 5px rgb(145, 178, 152);*/
+    padding: 10px;
+    /*background: rgba(110, 137, 116);*/
+    color: rgb(255, 255, 255);
+    transition: background 1s;
+    -webkit-transition: background 1s;
+    /*for safari 2.1 to 6.0*/
+}
+
+.card:hover {
+    /*變化後的效果，只有mouse in 的效果 沒有 mouse out的效果*/
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*aside*/
+aside {
+    clear: both;/*清除其他的float，就不會被影響*/
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+.wrap:nth-child(2n) {
+    /* 只要是雙數的欄位，會把背景色換掉 */
+    background: rgb(217, 217, 217);
+    /* border: solid 5px rgb(145, 178, 152); */
+}
+
+.tx_1,
+.tx_r {
+    float: left;
+}
+
+.tx_1 {
+    width: 30%;
+}
+
+.tx_r {
+    width: 70%;
+}
+
+.tx_1 img {
+    display: block;
+    /*照片滿版;*/
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tx_r p {
+    line-height: 2em;
+    box-sizing: border-box;
+    color: rgb(41, 41, 41);
+    /* 內文文字顏色 */
+    padding: 0px 20px;
+    /*background: #F63;*/
+}
+
+footer {
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+}
+
+::-moz-selection {
+    /*aside :: 有指定前面要加選擇器*/
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+::selection {
+    /*aside :: 有指定前面要加選擇器*/
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+
+
+/*/////////////////////////// RWD detil //////////////////////////// */
+
+/* For phone */
+@media only screen and (min-width: 368px) {
+
+    /*menu*/
+    nav {
+        position: fixed;
+        display: block;
+        z-index: 1000000;
+        text-align: center;
+        
+    }
+
+    nav a{
+        font-size: 40px;
+        display: block;
+        margin: auto;
+        border-bottom: 1px solid white;
+       
+    }
+
+    nav a li {
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+       
+        background: green;
+
+    }
+
+    nav a {
+
+        text-align: center;
+    }
+
+    aside {
+
+        display: flex;
+
+    }
+
+    aside h1 {
+        display: contents;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        color: #ffff00;
+    }
+
+
+    .box{
+        width: 100%;
+    }
+    /* section */
+    section {
+        display: inline-block;
+        /*完全沒有要調整位置 就可以不用加*/
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        align-items: stretch;
+    }
+
+
+}
+
+
+
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+
+
+    /*menu*/
+    nav {
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        justify-content: left;
+
+    }
+
+    nav a {
+        display: inline;
+        padding: fixed;
+        border-bottom: 0px ;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    nav li a {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+
+    /* aside */
+
+
+    aside h1 {
+        text-align: center;
+        /*老師說 不要用margin: auto!!!!*/
+        margin: 50px 0px;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        color: #ffff00;
+    }
+
+
+
+    header a {
+        text-align: center;
+        /*老師說 不要用margin: auto!!!!*/
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        background: #ffff00;
+        color: #000000;
+        padding: 5px 20px;
+
+    }
+
+
+    /* section */
+    section {
+
+        display: flex;
+        /*完全沒有要調整位置 就可以不用加*/
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        align-items: stretch;
+    }
+
+
+    .box {
+        display: inline-block;
+        /*這樣這個是不是可以刪掉??*/
+        width: 50%;
+        margin: 0px auto;
+        background: rgb(0, 0, 0);
+        z-index: 10;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .box:hover {
+        cursor: pointer;
+    }
+
+    .imgbox {
+        order: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .box .imgbox img {
+        float: left;
+        width: 100%;
+
+    }
+
+    .box h3 {
+        font-size: 40px;
+        order: 2;
+        box-sizing: border-box;
+        margin: 20px;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .box p {
+        order: 3;
+        box-sizing: border-box;
+        padding: 0px 20px 20px 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(242, 255, 0);
+    }
+
+    .head {
+        order: 4;
+        display: inline-block;
+        padding: 0px 20px 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .head img {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .head span {
+        float: left;
+        font-size: 13px;
+        color: rgb(184, 184, 184);
+        line-height: 40px;
+        margin-left: 10px;
+    }
+
+
+    aside {
+        clear: both;
+        width: 80%;
+        margin: auto;
+        padding: 50px 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    aside h1 {
+        font-size: 80px;
+    }
+
+
+    /*article*/
+    article {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+
+    }
+
+    .card {
+        float: left;
+        box-sizing: border-box;
+        width: auto;
+        text-align: center;
+        /*border: solid 5px rgb(145, 178, 152);*/
+        padding: 10px;
+        /*background: rgba(110, 137, 116);*/
+        color: rgb(255, 255, 255);
+        transition: background 1s;
+        -webkit-transition: background 1s;
+        /*for safari 2.1 to 6.0*/
+    }
+
+    .card:hover {
+        /*變化後的效果，只有mouse in 的效果 沒有 mouse out的效果*/
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    /*aside*/
+    aside {
+        clear: both;
+        /*清除其他的float，就不會被影響*/
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+    .wrap:nth-child(2n) {
+        /* 只要是雙數的欄位，會把背景色換掉 */
+        background: rgb(217, 217, 217);
+        /* border: solid 5px rgb(145, 178, 152); */
+    }
+
+    .tx_1,
+    .tx_r {
+        float: left;
+    }
+
+    .tx_1 {
+        width: 30%;
+    }
+
+    .tx_r {
+        width: 70%;
+    }
+
+    .tx_1 img {
+        display: block;
+        /*照片滿版;*/
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .tx_r p {
+        line-height: 2em;
+        box-sizing: border-box;
+        color: rgb(41, 41, 41);
+        /* 內文文字顏色 */
+        padding: 0px 20px;
+        /*background: #F63;*/
+    }
+
+}

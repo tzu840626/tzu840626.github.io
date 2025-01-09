@@ -1,0 +1,486 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap');
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+body {
+  background-color: rgb(255, 255, 0);
+
+}
+
+
+/* nav bar */
+
+/*menu*/
+nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-top: 10px;
+
+  
+
+}
+
+
+nav li {
+  display: block;
+  justify-content: center;
+  /* 水平置中 */
+  align-content: center;
+  /* 垂直置中 */
+ 
+
+}
+
+nav li a {
+  display: block;
+  max-width: 100%;
+  color: white;
+  text-decoration: none;
+  
+}
+
+nav li a h1 {
+  display: block;
+  max-width: 100%;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+
+/*article*/
+
+article {
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  /* 水平置中 */
+  align-content: center;
+  /* 垂直置中 */
+
+}
+
+.card {
+  float: left;
+  box-sizing: border-box;
+  width: 22.22%;
+  text-align: center;
+  /*border: solid 5px rgb(145, 178, 152);*/
+  padding: 10px;
+  /*background: rgba(110, 137, 116);*/
+  color: rgb(255, 255, 255);
+
+
+  transition: background 1s;
+  -webkit-transition: background 1s;
+
+}
+
+
+.container {
+  display: block;
+}
+
+
+/*aside*/
+aside {
+  clear: both;
+  /*清除其他的float，就不會被影響*/
+  width: 80%;
+  margin: auto;
+}
+
+
+footer {
+  clear: both;
+  padding: 20px 0px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+::-moz-selection {
+  /*aside :: 有指定前面要加選擇器*/
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+::selection {
+  /*aside :: 有指定前面要加選擇器*/
+  color: rgb(0, 0, 0);
+  background: rgb(234, 255, 0);
+}
+
+
+/*//////////////////////////// RWD detil //////////////////////////// */
+
+/* For phone */
+@media only screen and (min-width: 368px) {
+
+  /*menu*/
+  nav {
+    width: 100%;
+    position: relative;
+    z-index: 1000000;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    
+
+  }
+
+
+  nav li {
+    border-bottom: 1px solid rgb(221, 255, 0);
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    
+    
+
+
+  }
+
+  nav li a {
+    
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+   
+
+  }
+
+  nav li img {
+    
+    background-attachment: fixed;
+    justify-content: center;
+    align-content: center;
+
+
+  }
+
+  /*canvas*/
+
+  canvas {
+    display: block;
+    position: absolute;
+    background: rgb(0, 0, 255);
+
+  }
+
+  /*concent*/
+
+  article {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    font-size: 15pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+
+  .img {
+    padding: 110px;
+    z-index: 1000000;
+    align-items: center;
+    justify-content: center;
+    background: fixed;
+   
+
+  }
+
+  .img ul{
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .img ul h3 {
+    position: flex;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+
+
+  }
+
+  .img ul p {
+    position: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    
+  }
+
+
+  .img ul img {
+    position: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    
+    
+    
+  }
+
+
+
+
+
+
+  .card {
+    display: table-column;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    line-height: 30px;
+    padding: 30px;
+
+  }
+
+
+
+  .card h3 {
+    opacity: 1;
+    color: rgb(251, 255, 0);
+    padding: 10px 0px 10px 0px;
+
+
+  }
+
+  .card ul p l {
+    font-weight: 900;
+    font-size: 20px;
+
+  }
+
+
+
+  /* For tablets */
+  @media only screen and (min-width: 768px) {
+
+
+    nav {
+      display: block;
+    }
+
+    .left h1 {
+      width: auto;
+      font-size: 40px;
+    }
+
+    article {
+      display: block;
+      margin: auto;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+
+    }
+
+
+    /* For desktop */
+    @media only screen and (min-width: 1200px) {
+
+
+      /* nav bar */
+      /*menu*/
+      nav {
+        display: inline-flex;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        background: rgb(0, 0, 0);
+        padding-top: 20px;
+        align-content: center;
+      }
+
+
+      nav div {
+        justify-content: center;
+
+
+      }
+
+      nav div a {
+  
+        padding-left:20px ;
+        padding-right:20px ;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+      }
+
+
+      nav li {
+ 
+        border-bottom: 0;
+
+      }
+
+
+      }
+ 
+      nav li l a {
+        background: rgb(255, 0, 149);
+        font-size: 20px;
+        justify-content: center;
+        align-content: center;
+
+
+      }
+
+
+      nav li  img{
+        justify-content: right;
+        align-content: right;
+        padding-left:100px ;
+
+
+    
+
+      }
+
+
+
+     
+
+      nav a:hover {
+        color: rgb(255, 255, 255)
+      }
+
+
+
+      .name{
+        font-size: 50px;
+      }
+      /*canvas*/
+
+      canvas {
+        display: block;
+        position: absolute;
+        background: rgb(0, 0, 255);
+
+      }
+
+
+
+      /* content*/
+
+      article {
+        padding: 200px 0px;
+        display: flex;
+        position: relative;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        justify-content: center;
+        /* 水平置中 */
+        align-content: center;
+        /* 垂直置中 */
+
+
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .img {
+        width: 200px;
+        align-items: center;
+        background: rgb(255, 255, 255);
+        display: inline-flexbox;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .img h3 {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+
+      }
+
+      .img ul {
+
+        padding: 5px;
+        display: inline-flexbox;
+        text-align: center;
+        align-items: center;
+        line-height: 20px;
+      }
+
+      .card {
+        position: relative;
+        /* 设置为相对定位 */
+        padding: 0px 20px;
+        width: 230px;
+        line-height: 30px;
+        text-align: left;
+        align-items: center;
+        box-sizing: border-box;
+        border-bottom: solid 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+
+      .card h3 {
+        font-size: 25px;
+        color: rgb(255, 247, 0);
+        padding-top: 10px;
+
+      }
+
+      .card ul {
+        padding-top: 10px;
+
+      }
+
+
+      .card ul p l {
+        font-weight: 900;
+        font-size: 17px;
+
+      }
+
+
+
+
+      /* footer*/
+
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: black;
+
+      }
+    }
+  }
+}
+
+/*for safari 2.1 to 6.0*/

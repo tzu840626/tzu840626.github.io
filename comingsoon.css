@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap');
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+nav {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 0, 0);
+  padding-top: 20px;
+  align-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+
+nav div {
+  justify-content: center;
+
+
+}
+
+nav div a {
+
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+ 
+}
+
+nav li {
+  border-bottom: 1px solid rgb(221, 255, 0);
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  
+  
+
+
+}
+
+
+nav li l a {
+  background: rgb(255, 0, 149);
+  font-size: 20px;
+  justify-content: center;
+  align-content: center;
+
+
+}
+
+
+nav li img {
+  justify-content: right;
+  align-content: right;
+  padding-left: 100px;
+
+
+
+
+}
+
+
+header a {
+  position: fixed;
+  text-align: center;
+
+  /*老師說 不要用margin: auto!!!!*/
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  background: #ffff00;
+  color: #000000;
+  padding: 10px;
+
+}
+
+canvas {
+  display: block;
+}
+
+
+/* footer*/
+footer {
+  clear: both;
+  padding: 20px 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/*//////////////////////////// RWD detil //////////////////////////// */
+
+/* For phone */
+@media only screen and (min-width: 368px) {}
+
+
+/*menu*/
+nav {
+  width: 100%;
+  position: relative;
+  z-index: 1000000;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  
+
+}
+
+nav div {
+
+  padding: 20px;
+  border-bottom: 1px solid rgb(221, 255, 0);
+
+}
+
+
+nav li {
+  border-bottom: 1px solid rgb(221, 255, 0);
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  
+  
+  
+
+
+}
+
+nav li a {
+  
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+ 
+
+}
+
+nav li img {
+  
+  background-attachment: fixed;
+  justify-content: center;
+  align-content: center;
+
+
+}
+
+
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+
+ /* For desktop */
+ @media only screen and (min-width: 1200px) {
+
+
+  /* nav bar */
+  /*menu*/
+  nav {
+    display: inline-flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 0, 0);
+    padding-top: 20px;
+    align-content: center;
+  }
+
+
+  nav div {
+    justify-content: center;
+
+
+  }
+
+  nav div a {
+
+    padding-left:20px ;
+    padding-right:20px ;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+
+
+  nav li {
+
+    border-bottom: 0;
+
+  }
+
+
+  }
+
+  nav li l a {
+    background: rgb(255, 0, 149);
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+
+
+  }
+
+
+  nav li  img{
+    justify-content: right;
+    align-content: right;
+    padding-left:100px ;
+
+
+
+
+  }
+
+
+
+ 
+
+  nav a:hover {
+    color: rgb(255, 255, 255)
+  }
+
+
+
+  .name{
+    font-size: 50px;
+  }
+
+  header a {
+    position: fixed;
+    text-align: center;
+
+    /*老師說 不要用margin: auto!!!!*/
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    background: #ffff00;
+    color: #000000;
+    padding: 10px;
+
+  }
+
+  canvas {
+    display: block;
+    
+  }
+
+
+  /* footer*/
+  footer {
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+}

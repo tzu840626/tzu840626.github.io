@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efea3a;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_2-2" data-name="圖層 2">
+    <g>
+      <g>
+        <rect class="cls-1" y="9" width="4" height="17"/>
+        <rect class="cls-1" x="31" y="9" width="4" height="17"/>
+        <rect class="cls-1" x="15.5" y="23.5" width="4" height="19" transform="translate(50.5 15.5) rotate(90)"/>
+        <rect class="cls-1" x="15.5" y="-7.5" width="4" height="19" transform="translate(19.5 -15.5) rotate(90)"/>
+        <rect class="cls-1" x="4" y="4" width="4" height="5"/>
+        <rect class="cls-1" x="4" y="26" width="4" height="5"/>
+        <rect class="cls-1" x="27" y="4" width="4" height="5"/>
+        <rect class="cls-1" x="27" y="26" width="4" height="5"/>
+      </g>
+      <rect class="cls-1" x="15.72" y="15.31" width="4" height="14" transform="translate(40.03 4.59) rotate(90)"/>
+      <rect class="cls-1" x="10.72" y="10.69" width="4" height="5"/>
+      <rect class="cls-1" x="20.72" y="10.69" width="4" height="5"/>
+    </g>
+  </g>
+</svg>
